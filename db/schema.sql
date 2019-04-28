@@ -1,5 +1,7 @@
 create database friend_finder_db;
 
+use friend_finder_db;
+
 create table questions (
 	id int not null auto_increment,
 	question varchar(500) not null,
