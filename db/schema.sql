@@ -19,6 +19,7 @@ create table scores (
 	id int not null auto_increment,
 	question_id int not null,
 	friend_id int not null,
+	score int not null,
 	constraint foreign key (question_id) references questions(id),
 	constraint foreign key (friend_id) references friends(id),
 	primary key (id)
